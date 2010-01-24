@@ -23,7 +23,7 @@ requires:
   Carp: 0
   File::Temp: 0.14
   HTTP::Headers: 0
-  IO::File: 0
+  IO::File: 1.14
 resources:
   license: http://dev.perl.org/licenses/
-version: 1.06
+version: 1.07
