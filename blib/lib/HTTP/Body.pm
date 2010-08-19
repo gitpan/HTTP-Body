@@ -1,11 +1,10 @@
 package HTTP::Body;
-BEGIN {
-  $HTTP::Body::VERSION = '1.08';
-}
 
 use strict;
 
 use Carp       qw[ ];
+
+our $VERSION = '1.07';
 
 our $TYPES = {
     'application/octet-stream'          => 'HTTP::Body::OctetStream',

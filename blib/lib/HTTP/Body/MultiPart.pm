@@ -1,7 +1,4 @@
 package HTTP::Body::MultiPart;
-BEGIN {
-  $HTTP::Body::MultiPart::VERSION = '1.08';
-}
 
 use strict;
 use base 'HTTP::Body';
@@ -273,9 +270,7 @@ sub handler {
             $part->{filename} = $filename;
 
             if ( $filename ne "" ) {
-                my $suffix = $filename =~ /[^.]+(\.[^\\\/]+)$/ ? $1 : q{};
-
-                my $fh = File::Temp->new( UNLINK => 0, DIR => $self->tmpdir, SUFFIX => $suffix );
+                my $fh = File::Temp->new( UNLINK => 0, DIR => $self->tmpdir );
 
                 $part->{fh}       = $fh;
                 $part->{tempname} = $fh->filename;

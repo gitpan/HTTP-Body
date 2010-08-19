@@ -1,16 +1,57 @@
-#!perl
 
-use inc::Module::Install;
+use strict;
+use warnings;
 
-name 'HTTP-Body';
-all_from 'lib/HTTP/Body.pm';
 
-requires 'Carp';
-requires 'File::Temp' => '0.14';
-requires 'HTTP::Headers';
-requires 'IO::File' => '1.14';
 
-test_requires 'Test::More' => '0.86';
-test_requires 'Test::Deep';
+use ExtUtils::MakeMaker 6.31;
 
-WriteAll;
+
+
+my %WriteMakefileArgs = (
+  'ABSTRACT' => 'HTTP Body Parser',
+  'AUTHOR' => 'Christian Hansen, C<chansen@cpan.org>, Sebastian Riedel, C<sri@cpan.org>, Andy Grundman, C<andy@hybridized.org>',
+  'BUILD_REQUIRES' => {
+    'Test::Deep' => '0',
+    'Test::More' => '0.86'
+  },
+  'CONFIGURE_REQUIRES' => {
+    'ExtUtils::MakeMaker' => '6.31'
+  },
+  'DISTNAME' => 'HTTP-Body',
+  'EXE_FILES' => [],
+  'LICENSE' => 'perl',
+  'NAME' => 'HTTP::Body',
+  'PREREQ_PM' => {
+    'Carp' => '0',
+    'File::Temp' => '0.14',
+    'HTTP::Headers' => '0',
+    'IO::File' => '1.14'
+  },
+  'VERSION' => '1.08',
+  'test' => {
+    'TESTS' => 't/*.t'
+  }
+);
+
+
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
+  my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};
+  my $pp = $WriteMakefileArgs{PREREQ_PM};
+  for my $mod ( keys %$br ) {
+    if ( exists $pp->{$mod} ) {
+      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod};
+    }
+    else {
+      $pp->{$mod} = $br->{$mod};
+    }
+  }
+}
+
+delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
+  unless eval { ExtUtils::MakeMaker->VERSION(6.52) };
+
+WriteMakefile(%WriteMakefileArgs);
+
+
+
