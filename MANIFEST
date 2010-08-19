@@ -4,12 +4,6 @@ MANIFEST
 META.yml
 Makefile.PL
 README
-blib/lib/HTTP/Body.pm
-blib/lib/HTTP/Body/MultiPart.pm
-blib/lib/HTTP/Body/OctetStream.pm
-blib/lib/HTTP/Body/UrlEncoded.pm
-blib/lib/HTTP/Body/XForms.pm
-blib/lib/HTTP/Body/XFormsMultipart.pm
 dist.ini
 inc/Module/Install.pm
 inc/Module/Install/Base.pm

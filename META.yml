@@ -21,4 +21,4 @@ requires:
   File::Temp: 0.14
   HTTP::Headers: 0
   IO::File: 1.14
-version: 1.08
+version: 1.09
