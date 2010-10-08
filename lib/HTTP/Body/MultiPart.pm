@@ -1,6 +1,6 @@
 package HTTP::Body::MultiPart;
 BEGIN {
-  $HTTP::Body::MultiPart::VERSION = '1.09';
+  $HTTP::Body::MultiPart::VERSION = '1.10';
 }
 
 use strict;
@@ -9,6 +9,7 @@ use bytes;
 
 use IO::File;
 use File::Temp 0.14;
+use File::Spec;
 
 =head1 NAME
 
@@ -273,7 +274,8 @@ sub handler {
             $part->{filename} = $filename;
 
             if ( $filename ne "" ) {
-                my $suffix = $filename =~ /[^.]+(\.[^\\\/]+)$/ ? $1 : q{};
+                my $basename = (File::Spec->splitpath($filename))[2];
+                my $suffix = $basename =~ /[^.]+(\.[^\\\/]+)$/ ? $1 : q{};
 
                 my $fh = File::Temp->new( UNLINK => 0, DIR => $self->tmpdir, SUFFIX => $suffix );
 
