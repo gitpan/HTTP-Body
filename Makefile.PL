@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.31;
 
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'HTTP Body Parser',
-  'AUTHOR' => 'Christian Hansen, C<chansen@cpan.org>, Sebastian Riedel, C<sri@cpan.org>, Andy Grundman, C<andy@hybridized.org>',
+  'AUTHOR' => 'Christian Hansen, C<chansen@cpan.org>, Sebastian Riedel, C<sri@cpan.org>, Andy Grundman, C<andy@hybridized.org>, Torsten Raudssus, C<getty@cpan.org>',
   'BUILD_REQUIRES' => {
     'Test::Deep' => '0',
     'Test::More' => '0.86'
@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     'HTTP::Headers' => '0',
     'IO::File' => '1.14'
   },
-  'VERSION' => '1.11',
+  'VERSION' => '1.12',
   'test' => {
     'TESTS' => 't/*.t'
   }

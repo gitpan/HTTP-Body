@@ -1,6 +1,6 @@
 package HTTP::Body::XFormsMultipart;
 BEGIN {
-  $HTTP::Body::XFormsMultipart::VERSION = '1.11';
+  $HTTP::Body::XFormsMultipart::VERSION = '1.12';
 }
 
 use strict;

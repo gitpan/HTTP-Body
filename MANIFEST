@@ -13,6 +13,8 @@ lib/HTTP/Body/XForms.pm
 lib/HTTP/Body/XFormsMultipart.pm
 scripts/benchmark.pl
 scripts/stress.pl
+svn-commit.2.tmp
+svn-commit.tmp
 t/01use.t
 t/02pod.t
 t/03podcoverage.t

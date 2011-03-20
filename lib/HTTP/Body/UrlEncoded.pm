@@ -1,6 +1,6 @@
 package HTTP::Body::UrlEncoded;
 BEGIN {
-  $HTTP::Body::UrlEncoded::VERSION = '1.11';
+  $HTTP::Body::UrlEncoded::VERSION = '1.12';
 }
 
 use strict;

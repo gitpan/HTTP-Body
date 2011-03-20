@@ -1,6 +1,6 @@
 package HTTP::Body::MultiPart;
 BEGIN {
-  $HTTP::Body::MultiPart::VERSION = '1.11';
+  $HTTP::Body::MultiPart::VERSION = '1.12';
 }
 
 use strict;
@@ -311,10 +311,6 @@ sub handler {
 =head1 AUTHOR
 
 Christian Hansen, C<ch@ngmedia.com>
-
-=head1 CONTRIBUTORS
-
-Torsten Raudssus, C<torsten@raudssus.de>
 
 =head1 LICENSE
 
