@@ -11,10 +11,7 @@ lib/HTTP/Body/OctetStream.pm
 lib/HTTP/Body/UrlEncoded.pm
 lib/HTTP/Body/XForms.pm
 lib/HTTP/Body/XFormsMultipart.pm
-scripts/benchmark.pl
 scripts/stress.pl
-svn-commit.2.tmp
-svn-commit.tmp
 t/01use.t
 t/02pod.t
 t/03podcoverage.t
@@ -25,12 +22,6 @@ t/05urlencoded.t
 t/06octetstream.t
 t/07xforms.t
 t/08multipart-suffix.t
-t/data/benchmark/001-content.dat
-t/data/benchmark/001-headers.pml
-t/data/benchmark/002-content.dat
-t/data/benchmark/002-headers.pml
-t/data/benchmark/003-content.dat
-t/data/benchmark/003-headers.pml
 t/data/multipart/001-content.dat
 t/data/multipart/001-headers.pml
 t/data/multipart/001-results.pml

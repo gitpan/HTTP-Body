@@ -4,33 +4,33 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'HTTP Body Parser',
-  'AUTHOR' => 'Christian Hansen, C<chansen@cpan.org>, Sebastian Riedel, C<sri@cpan.org>, Andy Grundman, C<andy@hybridized.org>, Torsten Raudssus, C<getty@cpan.org>',
-  'BUILD_REQUIRES' => {
-    'Test::Deep' => '0',
-    'Test::More' => '0.86'
+  "ABSTRACT" => "HTTP Body Parser",
+  "AUTHOR" => "Christian Hansen, C<chansen\@cpan.org>, Sebastian Riedel, C<sri\@cpan.org>, Andy Grundman, C<andy\@hybridized.org>, Torsten Raudssus, C<getty\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "Test::Deep" => 0,
+    "Test::More" => "0.86"
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'HTTP-Body',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'HTTP::Body',
-  'PREREQ_PM' => {
-    'Carp' => '0',
-    'File::Temp' => '0.14',
-    'HTTP::Headers' => '0',
-    'IO::File' => '1.14'
+  "DISTNAME" => "HTTP-Body",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "HTTP::Body",
+  "PREREQ_PM" => {
+    "Carp" => 0,
+    "File::Temp" => "0.14",
+    "HTTP::Headers" => 0,
+    "IO::File" => "1.14"
   },
-  'VERSION' => '1.12',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "1.14",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
