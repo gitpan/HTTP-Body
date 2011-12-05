@@ -24,11 +24,12 @@ my %WriteMakefileArgs = (
   "NAME" => "HTTP::Body",
   "PREREQ_PM" => {
     "Carp" => 0,
+    "Digest::MD5" => 0,
     "File::Temp" => "0.14",
     "HTTP::Headers" => 0,
     "IO::File" => "1.14"
   },
-  "VERSION" => "1.14",
+  "VERSION" => "1.15",
   "test" => {
     "TESTS" => "t/*.t"
   }
