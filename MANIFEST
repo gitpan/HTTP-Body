@@ -6,6 +6,7 @@ Makefile.PL
 README
 dist.ini
 lib/HTTP/Body.pm
+lib/HTTP/Body.pm.orig
 lib/HTTP/Body/MultiPart.pm
 lib/HTTP/Body/OctetStream.pm
 lib/HTTP/Body/UrlEncoded.pm

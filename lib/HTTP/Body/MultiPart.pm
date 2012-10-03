@@ -1,6 +1,6 @@
 package HTTP::Body::MultiPart;
 {
-  $HTTP::Body::MultiPart::VERSION = '1.15';
+  $HTTP::Body::MultiPart::VERSION = '1.16';
 }
 
 use strict;
