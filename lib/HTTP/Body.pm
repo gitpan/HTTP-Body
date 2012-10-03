@@ -1,6 +1,6 @@
 package HTTP::Body;
 {
-  $HTTP::Body::VERSION = '1.16';
+  $HTTP::Body::VERSION = '1.17';
 }
 
 use strict;

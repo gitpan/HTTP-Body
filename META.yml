@@ -26,4 +26,4 @@ requires:
 resources:
   X_mailing_list: http://lists.scsys.co.uk/cgi-bin/mailman/listinfo/catalyst-dev
   repository: https://dev.catalystframework.org/repos/Catalyst/trunk/HTTP-Body/
-version: 1.16
+version: 1.17

@@ -29,7 +29,7 @@ my %WriteMakefileArgs = (
     "HTTP::Headers" => 0,
     "IO::File" => "1.14"
   },
-  "VERSION" => "1.16",
+  "VERSION" => "1.17",
   "test" => {
     "TESTS" => "t/*.t"
   }
