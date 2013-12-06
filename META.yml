@@ -26,4 +26,4 @@ requires:
 resources:
   Mailing_list: http://lists.scsys.co.uk/cgi-bin/mailman/listinfo/catalyst-dev
   repository: git://git.shadowcat.co.uk/catagits/HTTP-Body.git
-version: 1.18
+version: 1.19

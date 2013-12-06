@@ -1,6 +1,6 @@
 package HTTP::Body::OctetStream;
 {
-  $HTTP::Body::OctetStream::VERSION = '1.18';
+  $HTTP::Body::OctetStream::VERSION = '1.19';
 }
 
 use strict;
