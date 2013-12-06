@@ -1,6 +1,6 @@
 package HTTP::Body::XForms;
 {
-  $HTTP::Body::XForms::VERSION = '1.17';
+  $HTTP::Body::XForms::VERSION = '1.18';
 }
 
 use strict;

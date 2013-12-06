@@ -22,6 +22,7 @@ t/05urlencoded.t
 t/06octetstream.t
 t/07xforms.t
 t/08multipart-suffix.t
+t/09rt88342.t
 t/data/multipart/001-content.dat
 t/data/multipart/001-headers.pml
 t/data/multipart/001-results.pml
@@ -63,6 +64,8 @@ t/data/multipart/013-headers.pml
 t/data/multipart/013-results.pml
 t/data/multipart/014-content.dat
 t/data/multipart/014-headers.pml
+t/data/multipart/015-content.dat
+t/data/multipart/015-headers.pml
 t/data/octetstream/001-content.dat
 t/data/octetstream/001-headers.pml
 t/data/octetstream/001-results.dat

@@ -1,6 +1,6 @@
 package HTTP::Body::MultiPart;
 {
-  $HTTP::Body::MultiPart::VERSION = '1.17';
+  $HTTP::Body::MultiPart::VERSION = '1.18';
 }
 
 use strict;
@@ -258,6 +258,9 @@ sub parse_body {
 
 =cut
 
+our $basename_regexp = qr/[^.]+(\.[^\\\/]+)$/;
+#our $basename_regexp = qr/(\.\w+(?:\.\w+)*)$/;
+
 sub handler {
     my ( $self, $part ) = @_;
 
@@ -275,7 +278,7 @@ sub handler {
 
             if ( $filename ne "" ) {
                 my $basename = (File::Spec->splitpath($filename))[2];
-                my $suffix = $basename =~ /[^.]+(\.[^\\\/]+)$/ ? $1 : q{};
+                my $suffix = $basename =~ $basename_regexp ? $1 : q{};
 
                 my $fh = File::Temp->new( UNLINK => 0, DIR => $self->tmpdir, SUFFIX => $suffix );
 
